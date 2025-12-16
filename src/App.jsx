@@ -8,7 +8,7 @@ function App() {
     { id: 3, name: "John", age: 21 },
   ];
 
-  return <div>hi</div>;
+  return <div className="flex flex-col  ">hi</div>;
 }
 
 export default App;
