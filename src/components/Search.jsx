@@ -2,28 +2,29 @@ import React from "react";
 
 const Search = ({ search, setSearch }) => {
   return (
-    <input
-      value={search}
-      onChange={(e) => setSearch(e.target.value)}
-      type="text"
-      placeholder="Type here..."
-      className="
-        w-72
-        px-4 py-2
-        rounded-xl
-        border border-amber-400
-        bg-white
-        text-gray-800
-        placeholder-gray-400
-        shadow-sm
-        focus:outline-none
-        focus:ring-2
-        focus:ring-amber-400
-        focus:border-amber-500
-        transition
-        duration-200
-      "
-    />
+    <div className="w-full">
+      <input
+        value={search}
+        onChange={(e) => setSearch(e.target.value)}
+        type="text"
+        placeholder="Search by name…"
+        className="
+          w-full
+          px-4 py-3
+          rounded-xl
+          border border-slate-200
+          bg-white
+          text-slate-900
+          placeholder-slate-400
+          shadow-sm
+          focus:outline-none
+          focus:ring-2
+          focus:ring-sky-400
+          focus:border-sky-400
+          transition
+        "
+      />
+    </div>
   );
 };
 
